@@ -37,36 +37,45 @@
 			   text-align: center;
                justify-content: center;
 		   }
-         #real_logo{
-            color: white;
-         }
+		   #real_logo {
+			   color:white;
+			   font-size:x-large;
+			   text-align:center;
+		   }
+		   .container-fluid {
+			   position:relative;
+		   }
+		   .logoo {
+			   position:absolute;
+			   top:300%;
+			   left:50%;
+			   transform:translate(-50%, -50%);
+		   }
 	   </style>
    </head>
    <body>
       <!-- header section start -->
       <div class="header_section">
-         <div class="container-fluid" style="background-color: darkgreen;">
-            <nav class="navbar navbar-light bg-light justify-content-between">
-               <div id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="index.html">Home</a>
-                  <a href="products.html">Products</a>
-                  <a href="about.html">About</a>
-                  <a href="client.html">Client</a>
-                  <a href="contact.html">Contact</a>
-               </div>
-               <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-				<a class="logo" href="index.html"><p id="real_logo">Ewha Cafe Collection</p></a>
+         <div class="container-fluid" style="background-color:#00462A;">
+			 <nav class="navbar navbar-light bg-light justify-content-between">
+            <div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			 </div>
+               
+               <div class="logoo">
+				   <a class="logo" href="index.html"><p id="real_logo">Ewha Cafe Collection</p></a>
+				 </div>
+			 
                <form class="form-inline ">
                   <div class="login_text">
                      <ul>
-                        <li><a href="#"><img src="images/user-icon.png"></a></li>
+                        <!-- <li><a href="#"><img src="images/user-icon.png"></a></li>
                         <li><a href="#"><img src="images/bag-icon.png"></a></li>
-                        <li><a href="#"><img src="images/search-icon.png"></a></li>
+                        <li><a href="#"><img src="images/search-icon.png"></a></li> -->
                      </ul>
                   </div>
                </form>
-            </nav>
+         </nav>
          </div>
       </div>
       <!-- header section end -->
@@ -80,14 +89,27 @@
                         <div class="col-sm-6">
                            <h1 class="banner_taital">Ewha <br>Cafe <br> Collection</h1>
                            <p class="banner_text">이화 근처에서 카공하기 좋은 카페 추천</p>
-                           
                         </div>
                         <div class="col-sm-6">
                            <div class="banner_img"><img src="images/ewha-logo.png"></div>
                         </div>
                      </div>
                   </div>
-                </div>
+               </div>
+               <!-- <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <h1 class="banner_taital">Ewha <br>Cafe <br>Collection</h1>
+                           <p class="banner_text">댓글에 더 다양한 후기가 있어요</p>
+                           <div class="read_bt">
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="banner_img"><img src="images/banner-img.png"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
                <div class="carousel-item">
                   <div class="container">
                      <div class="row">
@@ -167,7 +189,7 @@
                      <div class="product_box">
                         <h4 class="bursh_text">스타벅스 이대 ECC점</h4>
                         <p class="lorem_text">지하에 위치하지만 햇빛이 들어오는 <br>스타벅스 </p>
-                        <img src="images/img-4.png" class="image_1">
+                        <img src="images/star.png" class="image_1">
                       <div class="btn_main">
                           <a href= "https://naver.me/FOhIaKiS" class="location"><span style="color:white">위치보기</span></a>
                           
@@ -180,7 +202,7 @@
                      <div class="product_box">
                         <h4 class="bursh_text">할리스 이대점</h4>
                         <p class="lorem_text">넓은 내부, 실패 없는 카공족들의 성지<br><br></p>
-                        <img src="images/img-5.png" class="image_1">
+                        <img src="images/hollys.jpeg" class="image_1">
                         <div class="btn_main">
                           <a href= "https://naver.me/FXZwABYH" class="location"><span style="color:white">위치보기</span></a>
                           
@@ -191,7 +213,7 @@
                      <div class="product_box">
                         <h4 class="bursh_text">앨리스</h4>
                         <p class="lorem_text">까눌레가 친절하고 사장님이 맛있어요<br><br></p>
-                        <img src="images/img-6.png" class="image_1">
+                        <img src="images/alice.jpeg" class="image_1">
                         <div class="btn_main">
                          <a href= "https://naver.me/5KZ5n51y" class="location"><span style="color:white">위치보기</span></a>
                        
@@ -202,7 +224,7 @@
                      <div class="product_box">
                         <h4 class="bursh_text">카페페라 유니크</h4>
                         <p class="lorem_text">수제 딸기케이크에 따뜻한 핸드드립<br> 커피</p>
-                        <img src="images/img-7.png" class="image_1">
+                        <img src="images/cafepera.jpeg" class="image_1">
                         <div class="btn_main">
                           <a href= "https://naver.me/GZAjxLvk" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -212,7 +234,7 @@
                      <div class="product_box">
                         <h4 class="bursh_text">벨라프라하</h4>
                         <p class="lorem_text">다른 곳에선 맛볼 수 없는 프라하식<br>디저트</p>
-                        <img src="images/img-8.png" class="image_1">
+                        <img src="images/bela.jpeg" class="image_1">
                         <div class="btn_main">
                           <a href= "https://naver.me/GWFrKB7O" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -223,8 +245,8 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
                         <h4 class="bursh_text">이디야커피 이화여대점</h4>
-                        <p class="lorem_text">가성비 좋고 조용한 카공 맛집<br><br></p>
-                        <img src="images/img-9.png" class="image_1">
+                        <p class="lorem_text">가성비 좋고 조용한 카공 맛집</p>
+                        <img src="images/ediya.jpeg" class="image_1">
                         <div class="btn_main">
                           <a href= "https://naver.me/FJH6Fr9e" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -233,8 +255,8 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
                         <h4 class="bursh_text">카페 문베어</h4>
-                        <p class="lorem_text">사이사이 쳐져 있는 커튼이 주는 편안함<br><br></p>
-                        <img src="images/img-10.png" class="image_1">
+                        <p class="lorem_text">사이사이 쳐져 있는 커튼이 주는 편안함</p>
+                        <img src="images/moonbear.jpeg" class="image_1">
                         <div class="btn_main">
                           <a href= "https://naver.me/5WcBW6HW" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -243,8 +265,8 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
                         <h4 class="bursh_text">클로리스 신촌본점</h4>
-                        <p class="lorem_text">20년동안 조용히 신촌을 지켜온 <br>근본 카페</p>
-                        <img src="images/img-11.png" class="image_1">
+                        <p class="lorem_text">20년간 조용히 신촌을 지켜온 근본 카페</p>
+                        <img src="images/cloris.jpeg" class="image_1">
                         <div class="btn_main">
                            <a href= "https://naver.me/Gz51bz3k" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -253,8 +275,8 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
                         <h4 class="bursh_text">탐앤탐스 이대점</h4>
-                        <p class="lorem_text">지하 40석 규모의 넓고 쾌적한 카페<br><br></p>
-                        <img src="images/img-12.png" class="image_1">
+                        <p class="lorem_text">지하 40석 규모의 넓고 쾌적한 카페</p>
+                        <img src="images/tomtom.jpeg" class="image_1">
                         <div class="btn_main">
                         <a href= "https://naver.me/56YhQ82y" class="location"><span style="color:white">위치보기</span></a>
                         </div>
@@ -267,31 +289,14 @@
       </div>
       <!-- product section end -->
       <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="about_section_main">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="about_taital_main">
-                        <h1 class="about_taital">About Our beauty sotore</h1>
-                        <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        <div class="readmore_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div><img src="images/about-img.png" class="image_3"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+ 
       <!-- about section end -->
       <!-- customer section start -->
       <div class="customer_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="customer_taital">What says customers</h1>
+                  <h1 class="customer_taital">About Us</h1>
                </div>
             </div>
             <div id="main_slider" class="carousel slide" data-ride="carousel">
@@ -300,11 +305,12 @@
                      <div class="client_section_2">
                         <div class="client_main">
                            <div class="client_left">
-                              <div class="client_img"><img src="images/client-img.png"></div>
+                             <!-- <div class="client_img"><img src="images/client-img.png"></div>-->
+							   <div class="client_img"><img src="images/yujin ra.jpg">
                            </div>
                            <div class="client_right">
-                              <h3 class="name_text">Jonyro</h3>
-                              <p class="dolor_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                              <h3 class="name_text">라유진</h3>
+                              <p class="dolor_text">전자전기공학과 21학번</p>
                            </div>
                         </div>
                      </div>
@@ -316,8 +322,21 @@
                               <div class="client_img"><img src="images/client-img.png"></div>
                            </div>
                            <div class="client_right">
-                              <h3 class="name_text">Jonyro</h3>
-                              <p class="dolor_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                              <h3 class="name_text">서지민</h3>
+                              <p class="dolor_text">컴퓨터공학과 21학번 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+				       <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                           <div class="client_left">
+                              <div class="client_img"><img src="images/client-img.png"></div>
+                           </div>
+                           <div class="client_right">
+                              <h3 class="name_text">이연경</h3>
+                              <p class="dolor_text">융합콘텐츠학과 20학번 </p>
                            </div>
                         </div>
                      </div>
@@ -329,8 +348,8 @@
                               <div class="client_img"><img src="images/client-img.png"></div>
                            </div>
                            <div class="client_right">
-                              <h3 class="name_text">Jonyro</h3>
-                              <p class="dolor_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                              <h3 class="name_text">정유진</h3>
+                              <p class="dolor_text">컴퓨터공학과 21학번</p>
                            </div>
                         </div>
                      </div>
@@ -352,7 +371,7 @@
             <div class="row">
                <div class="col-md-6">
                   <h1 class="contact_taital">Get In Touch</h1>
-                  <p class="contact_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                  <p class="contact_text">이화여자대학교 학문관 504호</p>
                </div>
                <div class="col-md-6">
                   <div class="contact_main">
@@ -364,7 +383,7 @@
          </div>
          <div class="map_main">
             <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+               <iframe src="https://naver.me/FWJ6isHb" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
             </div>
          </div>
       </div>
@@ -372,7 +391,7 @@
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+            <!-- <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div> -->
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-sm-4">
@@ -381,35 +400,35 @@
                         <ul>
                            <li>
                               <a href="#">
-                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address : Loram Ipusm</span>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address : 이화여자대학교 학문관</span>
                               </a>
                            </li>
-                           <li>
+                           <!-- <li>
                               <a href="#">
-                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call : +01 1234567890</span>
+                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call</span>
                               </a>
-                           </li>
+                           </li> -->
                            <li>
                               <a href="#">
-                              <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left10">Email : demo@gmail.com</span>
+                              <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left10">Email : owljin9786@ewhain.net</span>
                               </a>
                            </li>
                         </ul>
                      </div>
                   </div>
-                  <div class="col-sm-4">
+                  <!-- <div class="col-sm-4">
                      <div class="footer_logo_1"><a href="index.html"><img src="images/footer-logo.png"></a></div>
                      <p class="dummy_text">commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
-                  </div>
-                  <div class="col-sm-4">
+                  </div> -->
+                  <!-- <div class="col-sm-4">
                      <div class="main">
                         <h3 class="address_text">Best Products</h3>
-                        <p class="ipsum_text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                        <p class="ipsum_text"></p>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
-            <div class="social_icon">
+            <!-- <div class="social_icon">
                <ul>
                   <li>
                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -424,14 +443,14 @@
                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
                </ul>
-            </div>
+            </div> -->
          </div>
       </div>
       <!-- footer section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by Free html  Templates</p>
+            <p class="copyright_text" style="color:grey;">2020 All Rights Reserved. Design by Free html  Templates</p>
          </div>
       </div>
       <!-- copyright section end -->
