@@ -335,8 +335,9 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
-    height: auto;
+    /* background-image: url(../images/banner-bg.png); */
+    background-color:#00462A;
+    height: 600px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -345,7 +346,7 @@ button {
     width: 100%;
     margin: 0 auto;
     font-size: 100px;
-    color: #000;
+    color: white;
     line-height: 90px;
     padding-top: 20px;
     font-family: 'Great Vibes', cursive;
@@ -355,7 +356,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #000;
+    color: white;
     margin: 20px 0px;
 }
 
@@ -455,7 +456,7 @@ button {
 .btn_main {
     width: 100%;
     display: flex;
-    background-color: #000;
+    background-color: #00462A;
     height: auto;
     padding: 20px 10px 13px 10px;
 }
