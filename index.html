@@ -37,35 +37,31 @@
 			   text-align: center;
                justify-content: center;
 		   }
-		   #real_logo {
-			   color:white;
-			   font-size:x-large;
-			   text-align:center;
+		   #alignn {
+			   width: 100%;
+			   text-align: center;
 		   }
-		   .container-fluid {
-			   position:relative;
+		   .lorem_text{
+			   height:50px;
 		   }
-		   .logoo {
-			   position:absolute;
-			   top:300%;
-			   left:50%;
-			   transform:translate(-50%, -50%);
-		   }
+		  
+				   .contact_taital{
+				   text-align:center;
+					   }
+				 
 	   </style>
    </head>
    <body>
       <!-- header section start -->
-      <div class="header_section">
-         <div class="container-fluid" style="background-color:#00462A;">
+      <div class="header_section" style="background-color:#00462A">
+         <div class="container-fluid">
 			 <nav class="navbar navbar-light bg-light justify-content-between">
             <div id="mySidenav" class="sidenav">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			 </div>
-               
-               <div class="logoo">
-				   <a class="logo" href="index.html"><p id="real_logo">Ewha Cafe Collection</p></a>
-				 </div>
-			 
+               <div id="alignn">
+				    <a class="logo" href="index.html"><p class="banner_taital" style="color:white; font-size:3rem; display:inline-block;">Ewha Cafe Collection</p></a>
+				</div>
                <form class="form-inline ">
                   <div class="login_text">
                      <ul>
@@ -116,7 +112,6 @@
                         <div class="col-sm-6">
                            <h1 class="banner_taital">Ewha <br>Cafe <br>Collection </h1>
                            <p class="banner_text">개발자들이 직접 발로 뛰어다니면서 찾은 카페들</p>
-                           
                         </div>
                         <div class="col-sm-6">
                            <div class="banner_img"><img src="images/cafe.png"></div>
@@ -291,12 +286,12 @@
       <!-- about section start -->
  
       <!-- about section end -->
-      <!-- customer section start -->
+     <!-- customer section start -->
       <div class="customer_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="customer_taital">About Us</h1>
+                  <h1 class="customer_taital">DEVELOPERS</h1>
                </div>
             </div>
             <div id="main_slider" class="carousel slide" data-ride="carousel">
@@ -305,12 +300,11 @@
                      <div class="client_section_2">
                         <div class="client_main">
                            <div class="client_left">
-                             <!-- <div class="client_img"><img src="images/client-img.png"></div>-->
-							   <div class="client_img"><img src="images/yujin ra.jpg">
+                              <div class="client_img"><img src="images/YujinRa.jpg"></div>
                            </div>
                            <div class="client_right">
                               <h3 class="name_text">라유진</h3>
-                              <p class="dolor_text">전자전기공학과 21학번</p>
+                              <p class="dolor_text">전자전기공학과 21학번. <br>EwhaComputerClub 48기 </p>
                            </div>
                         </div>
                      </div>
@@ -319,24 +313,11 @@
                      <div class="client_section_2">
                         <div class="client_main">
                            <div class="client_left">
-                              <div class="client_img"><img src="images/client-img.png"></div>
+                              <div class="client_img"><img src="images/SeoJimin.jpg"></div>
                            </div>
                            <div class="client_right">
                               <h3 class="name_text">서지민</h3>
-                              <p class="dolor_text">컴퓨터공학과 21학번 </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-				       <div class="carousel-item">
-                     <div class="client_section_2">
-                        <div class="client_main">
-                           <div class="client_left">
-                              <div class="client_img"><img src="images/client-img.png"></div>
-                           </div>
-                           <div class="client_right">
-                              <h3 class="name_text">이연경</h3>
-                              <p class="dolor_text">융합콘텐츠학과 20학번 </p>
+                              <p class="dolor_text">컴퓨터공학과 21학번. <br>EwhaComputerClub 48기 </p>
                            </div>
                         </div>
                      </div>
@@ -345,17 +326,30 @@
                      <div class="client_section_2">
                         <div class="client_main">
                            <div class="client_left">
-                              <div class="client_img"><img src="images/client-img.png"></div>
+                              <div class="client_img"><img src="images/client_yk.jpg"></div>
+                           </div>
+                           <div class="client_right">
+                              <h3 class="name_text">이연경</h3>
+                              <p class="dolor_text">융합콘텐츠학과 20학번.<br>EwhaComputerClub 48기 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="client_section_2">
+                        <div class="client_main">
+                           <div class="client_left">
+                              <div class="client_img"><img src="images/Jeongyujin.jpg"></div>
                            </div>
                            <div class="client_right">
                               <h3 class="name_text">정유진</h3>
-                              <p class="dolor_text">컴퓨터공학과 21학번</p>
+                              <p class="dolor_text">컴퓨터공학과 21학번.<br>EwhaComputerClub 46기 </p>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev" color="green">
                <i class="fa fa-angle-left"></i>
                </a>
                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
@@ -365,25 +359,27 @@
          </div>
       </div>
       <!-- customer section end -->
+
       <!-- contact section start -->
       <div class="contact_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-md-6">
-                  <h1 class="contact_taital">Get In Touch</h1>
+               
+				   
+				   <h1 class="contact_taital">Get In Touch</h1>
                   <p class="contact_text">이화여자대학교 학문관 504호</p>
-               </div>
-               <div class="col-md-6">
+               
+              <!-- <div class="col-md-6">
                   <div class="contact_main">
                      <div class="contact_bt"><a href="#">Contact Form</a></div>
                      <div class="newletter_bt"><a href="#">Newletter</a></div>
                   </div>
-               </div>
+               </div>-->
             </div>
          </div>
          <div class="map_main">
             <div class="map-responsive">
-               <iframe src="https://naver.me/FWJ6isHb" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6802878549347!2d126.94300927532785!3d37.562595624354955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c99c0ae73f6b5%3A0x86fc7a325151fb71!2z7J207ZmU7Jes7J6Q64yA7ZWZ6rWQIO2VmeyDneusuO2ZlOq0gCjtlZnrrLjqtIAp!5e0!3m2!1sko!2skr!4v1684820338828!5m2!1sko!2skr" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
             </div>
          </div>
       </div>
@@ -394,7 +390,7 @@
             <!-- <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div> -->
             <div class="contact_section_2">
                <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-4" style="display:inline-block;">
                      <h3 class="address_text">Contact Us</h3>
                      <div class="address_bt">
                         <ul>
@@ -450,7 +446,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text" style="color:grey;">2020 All Rights Reserved. Design by Free html  Templates</p>
+            <p class="copyright_text" style="color:darkgrey;">2020 All Rights Reserved. Design by Free html Templates</p>
          </div>
       </div>
       <!-- copyright section end -->
